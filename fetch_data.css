@@ -1,0 +1,24 @@
+/* Add CSS styles for the table */
+.booking-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.booking-table th, .booking-table td {
+    padding: 8px;
+    border: 1px solid #18a798;
+    text-align: left;
+}
+
+.booking-table th {
+    background-color: #2fefdc;
+    color: #18a798;
+}
+
+.booking-table tr:nth-child(even) {
+    background-color: #18a798;
+}
+
+.booking-table tr:hover {
+    background-color: #18a798;
+}

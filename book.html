@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bokking page</title>
+    <link rel="stylesheet" type="text/css" href="shahab.css">
+</head>
+<body>
+    <section id="booking">
+        <div class="title-text">
+            <p>BOOKING FORM</p>
+            <h1>BOOKING DETAILS</h1>
+        </div>
+           
+
+        <div class="book-box">
+
+            <form action="#shahab.php" method="post">
+                    <div class="input-grpoup">
+                        <div class="input-feild">
+                            <lavel for="booking_id">Booking Id:</lavel>
+                            <input type="text" id="bookingNo"placeholder="Booking Id" readonly required>
+                        </div>
+                        <div class="btn-otp">
+                           <!-- <button type="submit" id="generatebtn">Get Booking Id</button>-->
+                            <button onclick="generateBookingNumber()">Get Booking Id</button>
+                        </div>
+                        <div class="input-feild">
+                            <lavel for="Phone">Phone No: </lavel>
+                            <input type="tel"  placeholder="Phone" required>
+                        </div>
+                        <!--<div class="input-feild">
+                            <lavel for="otp">Enter OTP:</lavel>
+                            <input type="texarea" placeholder="OTP" >
+                        </div>
+                        <div class="btn-otp">
+                            <button type="submit" name="Verify OTP">Send Otp</button>
+                            <button type="submit" name="Verify OTP">Verify OTP</button>
+                        </div>
+                    -->
+
+                        <div class="input-feild">
+                            <lavel for="name">Name: </lavel>
+                            <input type="text" placeholder="Name" required>
+                        </div>
+
+                        <div class="input-feild">
+                            <lavel for="email">Email: </lavel>
+                            <input type="email" placeholder="Email" required >
+                        </div>
+                        <div class="input-feild">
+                            <label for="time">Time:</label>
+                            <input type="time" required>
+                        </div>
+                        <div class="input-feild">
+                            <label for="date">Date:</label>
+                            <input type="date" required>
+                        </div>
+                        <div class="btn-otp">
+                            <button type="submit">Book Now</button>
+                        </div>
+    
+    
+
+                    </div>
+            </form>
+            
+        </div>
+        <img class="form-image" src="bgimg.jpg" alt="Image"> 
+    </section>
+    <script>
+                    function generateBookingNumber() {
+            event.preventDefault();
+            var randomNumber = Math.floor(100000 + Math.random() * 900000);
+            document.getElementById("bookingNo").value = randomNumber;
+            }
+    </script>
+</body>
+</html>

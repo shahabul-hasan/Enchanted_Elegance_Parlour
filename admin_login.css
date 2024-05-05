@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(32, 215, 209, 0.8),rgba(32, 215, 209, 0.8)),url(bgimg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .login-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #009688;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #009688;
+  }
+  
+  .forgot-password {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+    color: #009688;
+    text-decoration: none;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  .error-message {
+    color: #ff0000;
+    text-align: center;
+    margin-top: 10px;
+  }
+/* Add your CSS styles here */
+.error-message {
+    color: #ff0000;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .back-home {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #009688;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-home:hover {
+    background-color: #009688;
+  }
+    
